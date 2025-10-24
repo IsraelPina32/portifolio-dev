@@ -50,19 +50,24 @@ export const Hero = () => {
         </div>
 
         <div className="flex items-center justify-center gap-3 sm:gap-4 pt-8 animate-fade-in" style={{ animationDelay: '0.9s' }}>
-          <Button 
+          <Button
+            asChild 
             variant="outline" 
             size="icon" 
             className="rounded-full border-foreground/30 hover:border-foreground hover:bg-foreground hover:text-background transition-smooth active:scale-90 shadow-apple"
           >
+            <a href="https://github.com/IsraelPina32" target="_blank" rel="noopener noreferrer">
             <Github className="h-4 w-4 sm:h-5 sm:w-5" />
+             </a>
           </Button>
           <Button 
             variant="outline" 
             size="icon" 
             className="rounded-full border-foreground/30 hover:border-foreground hover:bg-foreground hover:text-background transition-smooth active:scale-90 shadow-apple"
           >
+            <a href="https://www.linkedin.com/in/israel-coimbra-de-pina-65b258231/" target="_blank" >
             <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
+            </a>
           </Button>
           <Button 
             variant="outline" 

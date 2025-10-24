@@ -20,25 +20,35 @@ export const Contact = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-8 animate-fade-in-delay">
-          <Button 
+          <Button
+            asChild
+            variant="outline"
             className="w-full sm:w-auto px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base bg-brand hover:bg-brand-dark hover:shadow-brand transition-elegant"
           >
+            <a href="mailto:israelcoimbra4142@gmail.com">
             <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
             Email
+            </a>
           </Button>
-          <Button 
+          <Button
+            asChild 
             variant="outline" 
             className="w-full sm:w-auto px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base hover:border-brand hover:text-brand hover:shadow-card transition-elegant"
           >
+            <a href="https://github.com/IsraelPina32" target="_blank" rel="noopener noreferrer">
             <Github className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
             GitHub
+            </a>
           </Button>
-          <Button 
+          <Button
+            asChild 
             variant="outline" 
             className="w-full sm:w-auto px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base hover:border-brand hover:text-brand hover:shadow-card transition-elegant"
           >
+            <a href="https://www.linkedin.com/in/israel-coimbra-de-pina-65b258231/" target="_blank" >
             <Linkedin className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
             LinkedIn
+            </a>
           </Button>
         </div>
       </div>
