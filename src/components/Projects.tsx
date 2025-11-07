@@ -157,9 +157,10 @@ export const Projects = () => {
         </div>
 
         <div className="text-center pt-8 animate-fade-in-delay">
-          <p className="text-muted-foreground font-light mb-6">
+          <p className="text-muted-foreground font-normal mb-6">
             Mais projetos em desenvolvimento
           </p>
+          <a href="https://github.com/IsraelPina32" target="_blank" rel="noopener noreferrer"> 
           <Button 
             variant="outline" 
             size="lg"
@@ -167,6 +168,7 @@ export const Projects = () => {
           >
             Ver Todos os Projetos
           </Button>
+          </a>
         </div>
       </div>
     </section>

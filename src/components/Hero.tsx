@@ -45,7 +45,7 @@ export const Hero = () => {
             Full Stack Developer
           </p>
           <p className="text-sm sm:text-base md:text-lg text-foreground/60 font-light animate-fade-in" style={{ animationDelay: '0.7s' }}>
-            Nord Dev • Fortaleza, CE
+            Belém, PA
           </p>
         </div>
 
