@@ -4,10 +4,10 @@ export const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center space-y-3 sm:space-y-4">
           <div className="h-px w-16 mx-auto bg-gradient-to-r from-transparent via-brand to-transparent mb-4" />
-          <p className="text-xs sm:text-sm text-muted-foreground font-light">
+          <p className="text-xs sm:text-base text-muted-foreground font-light">
             © {new Date().getFullYear()} Israel Pina. Todos os direitos reservados.
           </p>
-          <p className="text-xs text-brand/60 font-light">
+          <p className="text-base text-brand/60 font-normal">
             Desenvolvido com elegância e atenção aos detalhes
           </p>
         </div>
