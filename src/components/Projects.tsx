@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import sistemaNotasImage from '@/assets/images/sitema-notas.svg'
+import cadeado from '@/assets/images/cadeado.png'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,34 +13,34 @@ import 'swiper/css/effect-coverflow';
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Plataforma completa de e-commerce com painel administrativo, processamento de pagamentos e gestão de estoque.",
-    technologies: ["React", "TypeScript", "Express.js", "SQL"],
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=500&fit=crop",
+    title: "Sistema de Notas",
+    description: "Plataforma para criação de notas e organização de ideias.",
+    technologies: ["Vue.js"],
+    image: sistemaNotasImage,
+    github: "https://github.com/IsraelPina32/Sistema-Notas",
+    demo: "https://sistema-notas-rosy.vercel.app/",
+  },
+  {
+    title: "Projeto Mini Game Museu.",
+    description: "Desenvolvimento de um mini game educativo para o Museu Emílio Goeldi, focado em interatividade e aprendizado. (Em progresso)",
+    technologies: ["Next.js", "Typescript"],
+    image: cadeado,
+    github: "https://github.com/IsraelPina32/museu-emilio-goeldi",
+    demo: "#",
+  },
+  {
+    title: "Unclock",
+    description: "Em Breve",
+    technologies: [""],
+    image: cadeado,
     github: "#",
     demo: "#",
   },
   {
-    title: "Dashboard Analytics",
-    description: "Sistema de análise de dados em tempo real com visualizações interativas e relatórios personalizados.",
-    technologies: ["React", "Python", "Docker", "SQL"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "API Microservices",
-    description: "Arquitetura de microserviços escalável com containerização Docker e documentação completa.",
-    technologies: ["Express.js", "Docker", "Python", "SQL"],
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop",
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Mobile App Backend",
-    description: "Backend robusto para aplicativo móvel com autenticação JWT, notificações push e sincronização offline.",
-    technologies: ["Express.js", "TypeScript", "Docker", "SQL"],
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop",
+    title: "Unclock",
+    description: "Em Breve",
+    technologies: [],
+    image: cadeado,
     github: "#",
     demo: "#",
   },
@@ -104,7 +106,7 @@ export const Projects = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover transition-dramatic group-hover:scale-110"
+                      className="w-full max-h-fit object-cover transition-dramatic group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60 group-hover:opacity-80 transition-elegant" />
                   </div>
@@ -132,6 +134,7 @@ export const Projects = () => {
                     </div>
 
                     <div className="flex gap-3 pt-4">
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Button 
                         variant="outline" 
                         size="sm"
@@ -140,6 +143,8 @@ export const Projects = () => {
                         <Github className="mr-2 h-4 w-4" />
                         Código
                       </Button>
+                      </a>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
                       <Button 
                         variant="outline" 
                         size="sm"
@@ -148,6 +153,7 @@ export const Projects = () => {
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Demo
                       </Button>
+                      </a>
                     </div>
                   </div>
                 </Card>
