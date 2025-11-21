@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
-import sistemaNotasImage from '@/assets/images/sitema-notas.svg'
+import sistemaNotasImage from '@/assets/images/sistema-notas.png'
 import cadeado from '@/assets/images/cadeado.png'
 
 import 'swiper/css';
@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Sistema de Notas",
     description: "Plataforma para criação de notas e organização de ideias.",
-    technologies: ["Vue.js"],
+    technologies: ["Vue.js", "Tailwind CSS"],
     image: sistemaNotasImage,
     github: "https://github.com/IsraelPina32/Sistema-Notas",
     demo: "https://sistema-notas-rosy.vercel.app/",
@@ -49,7 +49,7 @@ const projects = [
 export const Projects = () => {
   return (
     <section className="py-24 px-6 bg-background relative overflow-hidden">
-      {/* Decorative Elements */}
+    
       <div className="absolute top-0 right-0 w-96 h-96 bg-brand/5 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10" />
 
