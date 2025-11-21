@@ -6,7 +6,6 @@ export const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  // Efeito Matrix (Partículas Brancas)
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -14,7 +13,6 @@ export const Hero = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // Definir tamanho do canvas
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -22,18 +20,14 @@ export const Hero = () => {
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
 
-    // Configuração das partículas
     const fontSize = 14;
     const columns = canvas.width / fontSize;
-    // Array para guardar a posição Y de cada coluna (inicia tudo no topo)
     const drops: number[] = [];
     for (let x = 0; x < columns; x++) {
       drops[x] = 1;
     }
 
     const draw = () => {
-      // Fundo preto semi-transparente para criar o efeito de rastro (fade)
-      // Se seu tema for claro, mude para rgba(255, 255, 255, 0.1) e as partículas para preto
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; 
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -41,13 +35,8 @@ export const Hero = () => {
       ctx.font = `${fontSize}px monospace`;
 
       for (let i = 0; i < drops.length; i++) {
-        // Caracteres aleatórios (Binários ou pontinhos para parecer partículas)
         const text = Math.random() > 0.5 ? "1" : "0"; 
-        // Ou use "." para partículas minúsculas: const text = ".";
-        
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-        // Reiniciar a gota no topo aleatoriamente após sair da tela
         if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
           drops[i] = 0;
         }
@@ -64,7 +53,6 @@ export const Hero = () => {
     };
   }, []);
 
-  // Efeito Mouse Parallax (Seu código original)
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
@@ -93,7 +81,6 @@ export const Hero = () => {
       {/* Gradient Overlay para suavizar o fundo (Opcional, mantive do seu código) */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-muted/30 z-0" />
 
-      {/* Subtle accent line */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-foreground/20 to-transparent z-10" />
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-foreground/20 to-transparent z-10" />
 
