@@ -14,15 +14,17 @@ export const About = () => {
 
         <div className="space-y-6 sm:space-y-8 text-center md:text-left animate-slide-up">
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed font-light">
-            Desenvolvedor full-stack com expertise em construir aplicações modernas e escaláveis.
-            Especializado em arquiteturas robustas e experiências de usuário excepcionais.
+           Engenheiro de Software Fullstack focado na convergência entre alta performance e design sofisticado. Especialista em arquitetar ecossistemas digitais escaláveis, transformando requisitos complexos em aplicações robustas e intuitivas.
           </p>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed font-light">
-            Atualmente desenvolvendo soluções inovadoras na{" "}
+            Atualmente, impulsiono a inovação na{" "}
             <span className="text-brand font-medium hover-scale inline-block cursor-pointer">
               Nord Dev
             </span>,
-            combinando tecnologias de ponta com princípios de design elegantes.
+            orquestrando soluções que unem engenharia de precisão a uma estética refinada, garantindo excelência técnica e impacto real no usuário final.
+          </p>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed font-light">
+            Tech Stack: React, Node.js, TypeScript, AWS, Docker, UI/UX Design.
           </p>
         </div>
       </div>
