@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-import sistemaNotasImage from '@/assets/images/sistema-notas.png'
+import sistemaNotasImage from '@/assets/images/sistemaNotasImage.png'
 import cadeado from '@/assets/images/cadeado.png'
 import pokedex from '@/assets/images/pokedex.png'
 import moviesPrimeImg from '@/assets/images/moviesPrimeImg.png'
@@ -26,7 +26,7 @@ const projects: Project[] = [
     id: 1,
     title: "Sistema de Notas",
     description: "Plataforma completa para gestão de conhecimento e anotações rápidas.",
-    category: "Full Stack",
+    category: "Frontend",
     technologies: ["Vue.js", "Tailwind"],
     image: sistemaNotasImage,
     github: "https://github.com/IsraelPina32/Sistema-Notas",
