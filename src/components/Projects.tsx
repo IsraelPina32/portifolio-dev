@@ -45,9 +45,9 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Pokedex",
-    description: "Dashboard financeiro com gráficos em tempo real.",
+    description: "Interface interativa com foco em UX avançada, utilizando design Glassmorphism e animações fluidas. Implementa o consumo de API REST (PokéAPI) com lógica otimizada de Hooks para gerenciamento de estados e renderização dinâmica de dados.",
     category: "Frontend",
-    technologies: ["React", "TypeScript", "PostgreSQL"],
+    technologies: ["React", "TypeScript", "Styled Components"],
     image: pokedex,
     github: "https://github.com/IsraelPina32/quest-pokedex",
     demo: "https://quest-pokedex-five.vercel.app/",
