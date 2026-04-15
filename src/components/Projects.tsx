@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import sistemaNotasImage from '@/assets/images/sistema-notas.png'
 import cadeado from '@/assets/images/cadeado.png'
 import pokedex from '@/assets/images/pokedex.png'
+import moviesPrimeImg from '@/assets/images/moviesPrimeImg.png'
 
 type Project = {
   id: number;
@@ -53,13 +54,13 @@ const projects: Project[] = [
   },
    {
     id: 4,
-    title: "Andamento...",
-    description: "Carregando...",
-    category: "Outros",
-    technologies: ["Secret", "Secret"],
-    image: cadeado,
-    github: "#",
-    demo: "#",
+   title: "Movie Prime Pro",
+    description: "Arquitetura Monorepo desenvolvida para aprofundamento em sistemas Back-end escaláveis, segurança de rotas e princípios de UX. O foco foi garantir uma experiência fluida para o usuário enquanto aplicava camadas de proteção de dados no lado do servidor.",
+    category: "Full Stack",
+    technologies: ["TypeScript", "Node.js", "React", "Tailwind"],
+    image: moviesPrimeImg,
+    github: "https://github.com/IsraelPina32/prime-movies-clone",
+    demo: "https://prime-movies-clone.vercel.app/",
   },
 ];
 
